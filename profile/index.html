@@ -1,0 +1,330 @@
+<!-- Declaração de que o documento é em HTML, marcado o inicio do código-->
+<!DOCTYPE html>
+
+<!-- tag HTML lang: especifica o idioma da pagina-->
+<html lang="pt-BR">
+
+
+<!--tag head: não é vizualizado no corpo (body) da pagina,
+armazana os metadados -->
+
+<head>
+
+    <!--Metadado: considera um conjunto de caracteres presente no idioma português (acentuação, por exemplo)-->
+    <meta charset="UTF-8">
+
+    <!--Metadado que possibilita a visulização em navegador de dispositivo móvel, mantendo a escala -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--referencia o arquivo css, colocar na tag head-->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="style/style2.css">
+
+    <!-- tag title: título da guia -->
+    <title>meu primeiro site</title>
+
+</head>
+
+
+
+<!--tag body: definir o corpo do documento(conteudo a ser visualizado) -->
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+    </style>
+
+
+    <!--cabeçalho da pagina -->
+    <header>
+        <!-- tag nav: cria uma seção de meu (navigation)-->
+        <nav>
+            <!--tag ul:cria uma lista desordenada, enquanto a tag 
+        ol cria uma ista ordenada-->
+            <ul id="menu">
+
+                <!--tag li: determina cada item-->
+
+                <!--tag a: possibilita que o texto seja clicável-->
+                <!--tag href: determina o redirecionamento da página -->
+                <li><a href="#" id="menu"> inicio </a></li>
+                <li><a href="sobremim.html" id="menu">sobre mim </a></li>
+                <li><a href="servicos.html" id="menu">serviços </a></li>
+                <li><a href="contato.html" id="menu">contato </a></li>
+            </ul>
+
+        </nav>
+
+        <!--fim do menu -->
+
+        <!-- cabeçalho da página-->
+
+
+        <!-- Divisão em parte menor, dentro de uma seção, identificada pela
+        palavra "apresentação" -->
+        <div class="apresentacao">
+
+
+            <div class="left">
+                <img src="img/background.png" width="90%" alt="macbook">
+            </div>
+
+            <div class="right">
+
+                <h2> soluções de T.I </h2>
+                <h2> desenvolvedor web </h2>
+
+
+                <div>
+                    <button class="bnt">Entre em contato</button>
+                </div>
+
+            </div>
+
+    </header>
+
+    <section id="sobreMim">
+        <h3>Sobre mim</h3>
+        <div class="containerSobreMim">
+            <div class="left">
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, minima delectus. Asperiores et totam
+                    eligendi nostrum molestias temporibus porro iusto provident illum officia, facilis recusandae. Earum
+                    aspernatur fugiat sequi reprehenderit!</p>
+
+                </div>
+            <div class="right">
+
+                <div class="socialMedia">
+
+                    <div>
+                        <a href="https://api.whatsapp.com/send?phone=5511980440694" target="_blank">
+                            <img src="img/redes-socias/icons8-whatsapp-96 (1).png">
+                    </div>
+                    <div>
+                        <p>(11) 980440694</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="socialMedia">
+
+
+                    <div>
+                        <a href="https://github.com/devonmarck" target="_blank">
+                            <img src="img/redes-socias/icons8-github-96.png">
+                    </div>
+                    <div>
+                        <p>devonmarck</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="https://www.linkedin.com/in/otavio-luiz-42a21221a/" target="_blank">
+                            <img src="img/redes-socias/icons8-linkedin-96.png">
+                    </div>
+
+                    <div>
+                        <p>Otavio Luiz</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="mailto:ol177522@gmail.com">
+                            <img src="img/redes-socias/icons8-gmail-96.png">
+                    </div>
+
+                    <div>
+                        <p>ol177522@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- divisão e parte menor, dentro de uma seção,indentificada pela 
+palavra "apresentação" -->
+
+    <section class="servicosTI">
+        <h3 class="servicosTIFont"> Desenvolvimento e implementação de aplicativos<h3>
+                <div class="conteinerServicos">
+
+                    <div class="itemServicos1">
+                        <img src="img/montagem-pc/96.png">
+                        <h2>montagem e manutenção de computadores</h2>
+                    </div>
+
+                    <div class="itemServicos2">
+                        <img src="img/redes/96.png">
+                        <h2>implementação e configuração de redes </h2>
+                    </div>
+
+                    <div class="itemServicos3">
+                        <img src="img/configuracao-SO/96.png">
+                        <h2> Configuração de sistemas operacionais</h2>
+                    </div>
+
+                    <div class="itemServicos4">
+                        <img src="img/SegurancaInformacao_64px.png">
+                        <h2> segurança da indormações, dados e backups </h2>
+                    </div>
+
+                </div>
+                <h3 class="servicosTIFont">Assistencia de redes e computadores<h3>
+                        <div class="conteinerServicos">
+
+                            <div class="itemServicos5">
+                                <img src="img/prototipacao/96.png">
+                                <h2>prototipação de aplicações</h2>
+                            </div>
+
+                            <div class="itemServicos6">
+                                <img src="img/banco-de-dados/96.png">
+                                <h2>administração de banco de dados </h2>
+                            </div>
+
+                            <div class="itemServicos7">
+
+                                <img src="img/sistema-desktop/96.png">
+                                <h2>desenvolvimentos de sistema dascktop</h2>
+                            </div>
+
+                            <div class="itemServicos8">
+                                <img src="img/desenvolver-site/96.png">
+                                <h2>desenvolvimento e hospedagem de site</h2>
+                            </div>
+
+                        </div>
+
+
+    </section>
+
+    <!-- tag hr: cria uma linha-->
+    <!--<hr>-->
+
+
+    <!--h4> subtítulo 4 </h4>
+<h5> subtítulo 5 </h5>
+<h6> subtítulo 6 </h6>
+ -->
+
+
+
+    <!--tag footer: seção para indentificar o rodapé -->
+    <footer>
+        <class="text-center text-lg-start text-white style="background-color: #4978dd">
+            <!-- Grid container -->
+            <div class="Color">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold letra">
+
+                            </h6>
+                            <p>
+
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"></h6>
+                            <p>
+                                <a class="text-white"></a>
+                            </p>
+                            <p>
+                                <a class="text-white"></a>
+                            </p>
+                            <p>
+                                <a class="text-white"></a>
+                            </p>
+                            <p>
+                             mm 
+                             
+                             
+                             <a class="text-white"></a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 letra">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contato</h6>
+                            <p><i class="fas fa-home mr-3"></i> são paulo, SP, BR</p>
+                            <p><i class="fas fa-envelope mr-3"></i> ol177522@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> +55 (11)98044-0694</p>
+                            <p><i class="fas fa-print mr-3"></i> </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Redes sociais</h6>
+
+                            <!-- Facebook -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #1957dd" href="#!"
+                                role="button"><i class="fab fa-facebook-f"></i></a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #4ab1ff" href="#!"
+                                role="button"><i class="fab fa-twitter"></i></a>
+
+                            <!-- Google -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd3d27" href="#!"
+                                role="button"><i class="fab fa-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #eb29e1" href="#!"
+                                role="button"><i class="fab fa-instagram"></i></a>
+
+                            <!-- Linkedin -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #12acff" href="#!"
+                                role="button"><i class="fab fa-linkedin-in"></i></a>
+                            <!-- Github -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #221f1f" href="#!"
+                                role="button"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgb(11, 5, 26)">
+                © 2023 Copyright
+
+            </div>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/ae709db17e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

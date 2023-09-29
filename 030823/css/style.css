@@ -1,0 +1,40 @@
+*{
+    font-size: px;
+    background: rgb(152, 206, 211);
+}
+
+
+
+#h1{
+    margin-left: 45%;
+    font-size: 30px;
+}
+
+ul{
+    font-size: 20px;
+}
+
+
+ol{
+  font-size: 20px;
+}
+    
+
+header {
+    background: hsl(185, 20%, 53%);
+    background: linear-gradient(0deg, rgba(127, 156, 158, 0.695) 0%, rgba(106, 138, 133, 0.664) 100%);
+}
+
+#imagensReceita {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#imagensReceita img {
+    padding: 20px;
+}
+
+

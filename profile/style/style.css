@@ -1,0 +1,461 @@
+/*
+morgin corresponde a margem esterna em relação no elemento padding á margem interna em relação ao elemento
+backgraud corresponde ao fundo , no qual é possivel colocar uma cor sólida única ou em grediente
+
+box-stizing: content-box não é uma boa pratica, pois ao aumentarmos uma imagem, por exemplo, ou qualquer outro elemento,o que 
+ocorre é que CAIXA DE CONTEÚDO ( em que o elemento está ) aumenta e não ele em si, causando possível discortoções. ideal é utilizar
+box-sizing: border-box
+
+utilizar o site: https://cssgradient.io/
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  margin-bottom: 50px;
+  justify-content: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+#menu a {
+  /*aplicar uma cor á fonte*/
+  color: rgb(253, 253, 255);
+  /* aplicar uma fonte */
+  font-size: 20px;
+  /*aumentar o tamanho da fonte*/
+  text-decoration: none;
+  /*tirar o sublinhado do link*/
+  flex-direction: row;
+  /*alinhar um ao lado do outro*/
+  margin: 0%;
+  /*atribuir uma margin a cada item*/
+  text-transform: uppercase;
+
+
+}
+
+/* ao passar o mouse */
+#menu a:hover {
+  color: rgb(60, 17, 216);
+
+}
+
+header {
+  background: rgb(32, 4, 65);
+  background: linear-gradient(180deg, hwb(213 1% 87%) 0%, rgb(19, 3, 37) 87%);
+}
+
+h1 {
+  font-size: 25px;
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(218, 215, 215);
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(243, 243, 243);
+}
+
+h3 {
+
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+
+
+}
+
+.apresentacao {
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.right {
+  flex: 4;
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.left {
+  color: black;
+  flex: 6;
+  text-align: center;
+}
+
+.btn {
+  border: 50px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10wpx;
+  border-radius: 5px;
+}
+
+.btncontact {
+  background: rgb(113, 41, 180);
+  color: rgb(230, 68, 68);
+  margin-top: 50px;
+  border-radius: 100px
+}
+
+.btncontact:hover {
+  background: rgb(187, 189, 185);
+  color: rgb(0, 0, 0);
+  transform: scale(1.005);
+}
+
+.conteinerServicos {
+  background: rgb(7, 1, 20);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+
+}
+
+.itemServicos1,
+.itemServicos2,
+.itemServicos3,
+.itemServicos4,
+.itemServicos5,
+.itemServicos6,
+.itemServicos7,
+.itemServicos8 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px 0px;
+  text-align: center;
+  width: 30%;
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 10%;
+}
+
+.containerSobreMim {
+  display: flex;
+  background: rgb(0, 0, 0);
+  padding-bottom: 50px;
+}
+
+.containerSobreMim .left {
+  padding-right: 22px;
+  padding-left: 22px;
+  flex: 3;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: blueviolet;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.containerSobreMim .right {
+  background: rgb(39, 39, 41);
+  flex: 7;
+  text-align: center;
+}
+
+#sobremim h3 {
+  background: rgb(133, 133, 163);
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.socialMedia {
+  display: flex;
+}
+
+.socialMedia img {
+  width: 30px;
+}
+
+#contato {
+  background: rgb(red, green, blue);
+}
+
+.containercontato h2 {
+
+  font-size: 22px;
+
+}
+
+input,
+textarea {
+  width: 200px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+  margin-left: 10px;
+
+}
+
+.Mensagem {
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+textarea {
+  width: 350px;
+  resize: none;
+}
+
+.Mensagem input {
+  width: 130px;
+
+}
+
+.Mensagem input:houver {
+  cursor: pointer;
+}
+
+
+.displaycontato {
+  display: flex;
+}
+
+form h2 {
+  font: 400;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.navColor {
+  justify-content: center;
+  font-size: 30px;
+  background: rgb(32, 4, 65);
+  background: linear-gradient(180deg, hwb(213 1% 87%) 0%, rgb(19, 3, 37) 87%);
+  margin: -15px;
+}
+
+.container-fluid {
+  background: rgb(7, 3, 27);
+}
+
+.navbar-toggler {
+  border: 1px solid transparent;
+  margin: 7px;
+}
+
+.navbar {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28255, 255, 255' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.Color {
+  background: rgb(42, 8, 82);
+}
+
+.letra {
+
+  color: white;
+
+}
+
+@media screen and (max-width: 480px) {
+  .apresentacao {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left img {
+    margin-bottom: 14px;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+
+  .containerSobreMim {
+    flex-direction: column;
+  }
+
+  .containerSobreMim .left {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .containerSobreMim .right {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .containerServicos {
+    flex-direction: column;
+  }
+
+  .containerServicos h2 {
+    font-size: 16px;
+  }
+
+  .itemServico1,
+  .itemServico2,
+  .itemServico3,
+  .itemServico4,
+  .itemServico5,
+  .itemServico6,
+  .itemServico7,
+  .itemServico8 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #servicos h3 {
+    font-size: 15px;
+  }
+
+  .displayContato {
+    flex-direction: column;
+  }
+
+  form {
+    max-width: 90%;
+    font-size: 18px;
+    background: yellow;
+    padding-left: 50px;
+    padding-bottom: 30px;
+
+  }
+
+  textarea {
+    width: 200px;
+  }
+
+  textarea,
+  input {
+    width: 100%;
+  }
+
+
+.mapa {
+  margin-left: 0px;
+  margin-top: 50px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 0%;
+}
+
+.dados {
+  width: 80%;
+}
+.Mensagem{
+  width: 80%;
+  margin-left: 0%;
+}
+.servicosTI{
+  flex-direction: column;
+}
+ }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .apresentacao {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left img {
+    margin-bottom: 14px;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+
+  .containerSobreMim {
+    flex-direction: column;
+  }
+
+  .containerSobreMim .left {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .containerSobreMim .right {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .containerServicos {
+    flex-direction: column;
+  }
+
+  .containerServicos h2 {
+    font-size: 16px;
+  }
+
+  .itemServico1,
+  .itemServico2,
+  .itemServico3,
+  .itemServico4,
+  .itemServico5,
+  .itemServico6,
+  .itemServico7,
+  .itemServico8 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #servicos h3 {
+    font-size: 15px;
+  }
+
+  .displayContato {
+    flex-direction: column;
+  }
+
+  form {
+    max-width: 90%;
+    font-size: 18px;
+    background: yellow;
+    padding-left: 50px;
+    padding-bottom: 30px;
+
+  }
+
+  textarea {
+    width: 200px;
+  }
+
+  textarea,
+  input {
+    width: 100%;
+  }
+}
+
+.mapa {
+  margin-left: 0px;
+  margin-top: 50px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 0%;
+}
+
+.dados {
+  width: 80%;
+}
+.Mensagem{
+  width: 80%;
+  margin-left: 0%;
+}
