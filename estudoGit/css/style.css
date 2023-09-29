@@ -3,3 +3,9 @@ margin: 0px;
 padding: 0px;
 box-sizing: border-box;
 }
+.bnt{
+    background: purple;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
